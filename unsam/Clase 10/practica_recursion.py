@@ -71,5 +71,32 @@ def posiciones_de(cadena, subcadena):
 
 l=posiciones_de('Un tete a tete con Tete', 'te')
     
+#%% Ejercicio 10.6: Paridad
+
+def impar(n):
+    return n==1
+
+def par(n):
+    pass
+
+#%% Ejercicio 10.7: Máximo
+
+def maximo(lista):
     
-    
+    def max_aux(lista, n=0, maximo=0):
+        
+        if n==len(lista):
+            return
+        if maximo<lista[n]:
+            maximo = lista[n]
+        
+        max_aux(lista, n+1, maximo)
+        
+        return maximo
+    maximo = max_aux(lista)
+
+    return maximo
+
+m = maximo([1,5,89,3,6])
+print(m)
+# %%
