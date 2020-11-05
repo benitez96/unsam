@@ -12,6 +12,9 @@ class Lote:
     def vender(self, cajones):
         self.cajones -= cajones
         
-
     def __repr__(self):
         return f'Lote({self.nombre}, {self.cajones}, {self.precio})'
+        
+    def __str__(self):
+        return f'Lote: {repr(self.nombre)} / {repr(self.cajones)} /{repr(self.precio)}'
+

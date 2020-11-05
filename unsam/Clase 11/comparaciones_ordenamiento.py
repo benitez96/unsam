@@ -52,7 +52,7 @@ def ord_insercion(lista):
             pasos = reubicar(lista, i + 1)
             comparaciones += pasos
             
-        #print("DEBUG: ", lista)
+        print("DEBUG: ", lista)
 
     return comparaciones
 
